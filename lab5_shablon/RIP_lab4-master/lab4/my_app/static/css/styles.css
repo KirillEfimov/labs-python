@@ -1,0 +1,34 @@
+/*@import colors_palete;*/
+body {
+	padding-top: 50px;
+	background-color: gray;
+}
+.navbar-inverse {
+	background-color: black;
+	border-color: black;
+}
+.navbar-inverse .navbar-brand {
+ 	color: white;
+}
+.panels {
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0px;
+	color: white;
+}
+#main-panel {
+}
+#side-panel {
+	border-radius: 4px;
+	background-color: black;
+}
+.news_elem {
+	border-radius: 4px;
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color: black;
+}
+.news_elem a{
+	color: white;
+}
