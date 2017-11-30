@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Самолеты{% endblock %}
+
+{% block main_block %}
+<h1 style="text-align: center">Самолеты</h1>
+{% for plane in object_list %}
+    <div class="main_block_elem">
+        <h2>{{ plane.name }}</h2>
+        Номер рейса: {{ plane.number }}<br>
+        {% if plane.description is not Null %}
+        Описание: {{ plane.description }}
+        {% endif %}
+    </div>
+{%  empty %}
+    <div class="main_block_elem">
+        <h2>Пока ни одного самолета</h2>
+    </div>
+{% endfor %}
+{% endblock %}
